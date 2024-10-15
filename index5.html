@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="coffeeBlock">
+<head>
+  <meta charset="UTF-8">
+  <title>New</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+
+  <link rel='stylesheet' href='https://codepen.io/TORAHTECH/pen/YzdOrKO.css'><link rel="stylesheet" href="./style.css">
+
+  <style>
+   body {
+      overflow: scroll;
+   }
+   #container {
+   position: relative;
+   margin: auto auto;
+   width: 50%;
+   height: auto;
+}
+
+.coffee {
+   display: block;
+   width: 607px;
+   min-height: 30px;
+   max-height: 80px;
+   margin: 10px 0;
+   background-position: 0 100%;
+   background-repeat: repeat-x;
+   background-color: #a2a3a7;
+   border: 1px solid #e5e5e5;
+   color: #ffffff;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+   display: block;
+   margin: 30px 0;
+   padding: 15px 17px;
+   position: relative;
+
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 13px;
+   line-height: 150%;
+}
+.coffee b {
+   font-weight: 700;
+   color: #7777aa;
+}
+
+.coffee a {
+   color: #7777ee;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.coffee a:hover {
+   color: #7777aa;
+   text-decoration: underline;
+}
+
+.coffee img {
+   position: relative;
+
+   float: left;
+
+   margin-top: -20px;
+   left: -14px;
+   z-index: 2;
+
+   max-width: 100%;
+   height: 100px;
+   vertical-align: middle;
+   border: 0;
+   opacity: 1;
+   transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+   transition-duration: 0.5s;
+}
+
+.coffee:hover img {
+   opacity: 0.2;
+   margin-left: 12px;
+
+   -ms-transform: rotate(4deg); /* IE 9 */
+   -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+   transform: rotate(4deg);
+}
+
+/* special image for last blockquote */
+#arrow {
+   opacity: 0;
+   display: block;
+   height: 24px;
+   top: 40px;
+   left: 296.7px;
+}
+.coffee:hover #arrow {
+   opacity: 1;
+   left: 296px;
+}
+
+/* end end end of special image, you may delete */
+
+/* responsive CSS  */
+@media screen and (max-width: 600px) {
+   .coffeeBlock #container {
+      width: 100vw;
+   }
+   .coffeeBlock .coffee {
+      width: 90%;
+      max-height: unset;
+      line-height: 1.3em;
+   }
+}
+  
+   body{
+ background: rgb(0, 0, 0);
+background: -moz-linear-gradient(30deg, rgb(8, 93, 230) 7%, rgb(90, 118, 252) 48%);
+background: -webkit-linear-gradient(30deg, rgb(8, 93, 230) 7%, rgb(90, 118, 252) 48%);
+background: -o-linear-gradient(30deg, rgb(8, 93, 230) 7%, rgb(90, 118, 252) 48%);
+background: -ms-linear-gradient(30deg, rgb(8, 93, 230) 7%, rgb(90, 118, 252) 48%);
+background: linear-gradient(120deg, rgb(8, 93, 230) 7%, rgb(90, 118, 252) 48%);
+}
+
+.boxa {
+   border:1px solid black;
+   width:900px;
+   height:900px;
+   margin:0 auto;
+   border-radius:1em;
+   
+   background: rgba(0,0,0,0.7);
+   padding:06px;
+   
+   
+}
+
+.boxrow {
+   border:1px solid #fff;
+   width:100%;
+   height:280px;
+   display:inline-block;
+   margin:auto;
+   overflow :hidden;
+   
+    -webkit-transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:         all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.boxcell { 
+ width:100%;
+  
+   height:90%;
+   display:inline-block;
+   position:absolute;
+z-index:2;
+  
+background-image: url(https://68.media.tumblr.com/1686a724a424593f45e24a88b58b22fb/tumblr_mt6g4rgeT41s5jjtzo1_400.gif);
+background-position: center ;
+
+background-repeat: no-repeat;
+   background-size:contain;
+   opacity:0.9;
+   
+    -webkit-transition: all 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition:         all 300ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+.boxcell2 { 
+ width:40%;
+   height:90%;
+margin:04px;
+ position:relative;
+z-index:1;
+background-position:  center;
+
+background-repeat: no-repeat;
+   background-size:cover;
+   opacity:0;
+}
+
+.boxrow:hover .boxcell2 {
+    width:30%;
+     opacity:10;
+   border-radius:10%;
+   margin-left:20px;
+   box-shadow:07px 0 08px rgb(8, 3, 230) inset,04px 1px 8px rgb(08, 0, 120) inset;
+      background-size:contain;
+    -webkit-transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition:         all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.boxrow:hover {
+    box-shadow:122px 0  022px rgb(48, 23, 230) inset;
+   
+}
+
+.boxrow:hover .boxcell {
+   opacity:0.1;
+}
+.image-a {
+   background-image: url(http://1.bp.blogspot.com/-1x7pea2e_j4/U6mFS25yjHI/AAAAAAAAOSg/6FXfRNci6pQ/s1600/01+free+digital+stamp_lion+head+clip+art.png.png);
+
+}
+
+
+.image-ab {
+background-image: url(http://en.xn--icne-wqa.com/images/icones/1/6/acquila-02.png);
+width:40%;
+   margin-left:-44px;
+   background-size:100%;
+  height:100%;
+}
+
+.desc {
+   float:right;
+   width:200px;
+   height:230px;
+   padding:08px;
+   margin:12px;
+   background:#eee;
+   border-radius:0.2em;
+   background:rgba(0,0,0,0.7);
+   border-left:12px dotted #000;
+   color:#a2a2a2;
+   text-shadow:02px 01px 01px #333;
+}
+
+.desc p {
+   margin:0;
+   padding:06px 12px;
+   text-align:center;
+   word-spacing:0.1em;
+   font-size:18px;
+   background:black;
+   color:#fff;
+   border-radius:0.2em;
+   box-shadow:01px 01px 0 #11112a;
+    text-shadow:01px 01px 0 #00001a;
+    -webkit-transition: all 100ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition:         all 100ms cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+.desc p:active {
+      box-shadow:01px 01px 0 #1111fa;
+   border-radius:0.1em;
+}
+
+.desc p:first-letter {
+   text-transform:uppercase;
+}
+</style>
+</head>
+<body>
+   <!-- partial:index.partial.html -->
+<div id="container">
+
+   <div class="coffee">
+      (Revelation 5:5) And one of the elders saith unto me, Weep not: behold, the Lion of the tribe of Juda, the Root of David, hath prevailed to open the book, and to loose the seven seals thereof.
+
+      <img src="https://cdn-icons-png.flaticon.com/512/2219/2219730.png" alt="Labhi">
+   </div>
+
+   <div class="coffee">
+
+      (Revelation 22:1) And he shewed me a pure river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb.
+
+      <img src="https://cdn-icons-png.flaticon.com/512/2219/2219730.png" alt="Labhi">
+   </div>
+
+   <div class="coffee">
+
+      And there shall be no more curse: but the throne of God and of the Lamb shall be in it; and his servants shall serve him: <b style="font-size:24px;font-weight:900;"> .</b> <a href="https://webchannel.purebiblesearch.com/" style="text-decoration: none; color: inherit;">(Revelation 22:3)</a>
+
+      <img style="float:right;" src="http://www.i2symbol.com/images/symbols/punctuation/horizontal_ellipsis_u2026_icon_256x256.png" alt="punctuation">
+
+      <img id="arrow" src="http://c.dryicons.com/images/icon_sets/stickers_icon_set/png/128x128/up_arrow.png" alt="" />
+
+   </div>
+
+   <!--    end end end of container -->
+</div>
+
+<!-- partial:index.partial.html -->
+<div id="contain">
+   <div class="boxa">
+      <div class="boxrow">
+         <div class="boxcell">
+         </div>
+         <div class="desc">
+            <h3>Rev 1:8</h3>
+            <p> I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.</p>
+         </div>
+         <div class="boxcell2 image-a"></div>
+      </div>
+
+
+      <div class="boxrow">
+         <div class="boxcell"></div>
+         <div class="desc">
+            <h3>Rev 4:7</h3>
+            <p>And the first beast was like a lion, and the second beast like a calf, and the third beast had a face as a man, and the fourth beast was like a flying eagle.</p>
+         </div>
+         <div class="boxcell2 image-ab"></div>
+      </div>
+
+
+   </div>
+<!-- partial -->
+  
+</body>
+</html>
